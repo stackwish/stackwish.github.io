@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,6 +14,7 @@
 }
 body {
     background: var(--light);
+    font-family: 'Gabarito', sans-serif;
 }
 /* TEXTS */
 h1 {
