@@ -20,6 +20,8 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -43,30 +45,33 @@
         </div>
 
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+        <path fill="#2C394B" fill-opacity="1" d="M0,192L12.6,170.7C25.3,149,51,107,76,101.3C101.1,96,126,128,152,144C176.8,160,202,160,227,154.7C252.6,149,278,139,303,149.3C328.4,160,354,192,379,213.3C404.2,235,429,245,455,250.7C480,256,505,256,531,261.3C555.8,267,581,277,606,261.3C631.6,245,657,203,682,186.7C707.4,171,733,181,758,170.7C783.2,160,808,128,834,128C858.9,128,884,160,909,186.7C934.7,213,960,235,985,213.3C1010.5,192,1036,128,1061,117.3C1086.3,107,1112,149,1137,170.7C1162.1,192,1187,192,1213,170.7C1237.9,149,1263,107,1288,106.7C1313.7,107,1339,149,1364,160C1389.5,171,1415,149,1427,138.7L1440,128L1440,0L1427.4,0C1414.7,0,1389,0,1364,0C1338.9,0,1314,0,1288,0C1263.2,0,1238,0,1213,0C1187.4,0,1162,0,1137,0C1111.6,0,1086,0,1061,0C1035.8,0,1011,0,985,0C960,0,935,0,909,0C884.2,0,859,0,834,0C808.4,0,783,0,758,0C732.6,0,707,0,682,0C656.8,0,632,0,606,0C581.1,0,556,0,531,0C505.3,0,480,0,455,0C429.5,0,404,0,379,0C353.7,0,328,0,303,0C277.9,0,253,0,227,0C202.1,0,177,0,152,0C126.3,0,101,0,76,0C50.5,0,25,0,13,0L0,0Z"></path>
+    </svg>
     <main>
         <!--ToDo: Introduction section-->
-        <section>
+        <section data-aos="fade-in">
             <h2 class="section-title">What do we do?</h2>
             <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="card-container">
                 
-                <div class="card">
+                <div class="card transition grow">
                     <span class="material-symbols-outlined">format_shapes</span>
                     <h3>Design</h3>
                 </div>
-                <div class="card">
+                <div class="card transition grow">
                     <span class="material-symbols-outlined">code</span>
                     <h3>Development</h3>
                 </div>
-                <div class="card">
+                <div class="card transition grow">
                     <span class="material-symbols-outlined">database</span>
                     <h3>Web hosting</h3>
                 </div>
-                <div class="card">
+                <div class="card transition grow">
                     <span class="material-symbols-outlined">speed</span>
                     <h3>Maintenance</h3>
                 </div>
-                <div class="card">
+                <div class="card transition grow">
                     <span class="material-symbols-outlined">globe_uk</span>
                     <h3>Domains</h3>
                 </div>
@@ -74,7 +79,7 @@
             
         </section>
         <!--ToDo: About us section-->
-        <section>
+        <section data-aos="fade-in">
             <h2 class="section-title">Our Team</h2>
             <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="card-container">
@@ -91,9 +96,41 @@
             </div>
         </section>
         <!--ToDo: Projects section-->
+        <section data-aos="fade-in">
+            <h2 class="section-title">Our projects</h2>
+        </section>
         <!--ToDo: Contact info section-->
+        <section data-aos="fade-in">
+            <h2 class="section-title">Contact us</h2>
+            <p class="section-description"></p>
+            <form action="./" method="post">
+                <label for="name">Name: <br>
+                    <input type="text" name="name" id="name" placeholder="Name" title="A név csak betűket tartalmazhat." required pattern="[a-zA-Z]+">
+                </label><br>
+                <label for="email">Email: <br>
+                    <input type="email" name="email" id="email" placeholder="Email" title="Hibás email formátum." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </label><br>
+                <label for="phone">Phone: <br>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone number" title="A telefonszám csak számokat, kötőjeleket, illetve szóközöket tartalmazhat." pattern="(\+|(\+[1-9\- ])?[0-9\- ]*)">
+                </label><br>
+                <label for="service">Service <br>
+                    <select name="service" id="service" required>
+                        <option value="default" disabled="" selected="" hidden="">Please choose...</option>
+                        <option value="development">Website Development</option>
+                        <option value="domain">Domain and storage</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="seo">SEO</option>
+                        <option value="combined">Combined services</option>
+                    </select>
+                </label><br>
+                <label for="message">Message: <br>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </label><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
         <!--ToDo: Review section-->
-        <section>
+        <section data-aos="fade-in">
             <h2 class="section-title">Payment methods</h2>
             <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="card-container">
