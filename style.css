@@ -12,6 +12,8 @@
     --light: #334756;
     --outline: #FF4C29;
 }
+
+html {scroll-behavior: smooth;}
 body {
     background: var(--light);
     font-family: 'Gabarito', sans-serif;
@@ -29,6 +31,13 @@ h2 {
     font-weight: 800;
     color: var(--outline);
 }
+.subheading {
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
 p {
     font-size: 20px;
     font-weight: 400;
@@ -38,7 +47,7 @@ p {
 }
 .text-secondary {
     color: #aaaaaa;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 800;
 }
 .material-symbols-outlined {
@@ -208,6 +217,38 @@ footer {
     color: white;
 }
 
+/* INPUT FIELDS */
+input, select, textarea {
+    width: 300px;
+    margin: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--outline);
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type=submit] {
+    width: 300px;
+    background-color: var(--outline);
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+label {color: white;}
+
+.asterisk {
+    color: var(--outline);
+    font-size: 25px;
+}
 
 .grow:hover {
     transform: scale(1.2);

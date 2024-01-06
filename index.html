@@ -62,7 +62,7 @@
         <img class="navbar-logo" alt="logo" src="assets/brand/logo.png" >
         <span class="navbar-brand">StackWish</span>
         <div class="navbar-links">
-            <a href="#" class="btn btn-primary">Contact us</a>
+            <a href="#contact" class="btn btn-primary">Contact us</a>
         </div>
     </nav>
     <div class="hero">
@@ -70,7 +70,7 @@
             <h1 class="hero-title">We're building you a great website to level up your business</h1>
             <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur, nam dolorem libero temporibus beatae similique eos eum asperiores impedit nemo rem voluptates minima velit? Error eveniet ex aliquid nisi.</p>
             <div>
-                <a href="#" class="btn btn-primary">Contact us</a>
+                <a href="#contact" class="btn btn-primary">Contact us</a>
                 <a href="#" class="btn btn-secondary">Contact us</a>
             </div>
         </div>
@@ -110,21 +110,32 @@
                     <h3>Domains</h3>
                 </div>
             </div>
-            
+            <h3 class="subheading">Special services</h3>
+            <div class="card-container">
+                
+                <div class="card transition grow">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <h3>Discord bots</h3>
+                </div>
+                <div class="card transition grow">
+                    <span class="material-symbols-outlined">currency_bitcoin</span>
+                    <h3>Web3 development</h3>
+                </div>
+            </div>
         </section>
         <!--ToDo: About us section-->
         <section>
             <h2 class="section-title">Our Team</h2>
-            <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="section-description">This is our team of industry professionals. Each of us specialize in one field of development and we work together to level up your business with the best website possible that will bring you customers as a magnet.</p>
             <div class="card-container">
                 <div class="card-team">
-                    <img class="image-round" src="assets//images/team/Peter.png" alt="placeholder" style="width: 60px; height: 60px; box-shadow: 0px 4px 25px 0px #FF4C29;">
-                    <h3 style="color: white;">Peter Till</h3>
-                    <span class="text-secondary">Software Engineer</span>
+                    <img class="image-round" src="assets//images/team/Peter.png" alt="placeholder" style="width: 80px; height: 80px; box-shadow: 0px 4px 25px 0px #FF4C29;">
+                    <h3 style="color: white; font-size: 28px;">Peter Till</h3>
+                    <span class="text-secondary">Founder & Developer</span>
                 </div>
                 <div class="card-team">
-                    <img class="image-round" src="assets//images/team/Peter.png" alt="placeholder" style="width: 60px; height: 60px; box-shadow: 0px 4px 25px 0px #FF4C29;">
-                    <h3 style="color: white;">Beny</h3>
+                    <img class="image-round" src="assets//images/team/Peter.png" alt="placeholder" style="width: 80px; height: 80px; box-shadow: 0px 4px 25px 0px #FF4C29;">
+                    <h3 style="color: white; font-size: 28px;">Beny</h3>
                     <span class="text-secondary">Frontend Developer</span>
                 </div>
             </div>
@@ -134,20 +145,20 @@
             <h2 class="section-title">Our projects</h2>
         </section>
         <!--ToDo: Contact info section-->
-        <section>
+        <section id="contact">
             <h2 class="section-title">Contact us</h2>
             <p class="section-description"></p>
             <form action="./" method="post">
-                <label for="name">Name: <br>
+                <label for="name">Name:<span class="asterisk">*</span> <br>
                     <input type="text" name="name" id="name" placeholder="Name" title="A név csak betűket tartalmazhat." required pattern="[a-zA-Z]+">
                 </label><br>
-                <label for="email">Email: <br>
+                <label for="email">Email:<span class="asterisk">*</span> <br>
                     <input type="email" name="email" id="email" placeholder="Email" title="Hibás email formátum." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 </label><br>
                 <label for="phone">Phone: <br>
                     <input type="tel" name="phone" id="phone" placeholder="Phone number" title="A telefonszám csak számokat, kötőjeleket, illetve szóközöket tartalmazhat." pattern="(\+|(\+[1-9\- ])?[0-9\- ]*)">
                 </label><br>
-                <label for="service">Service <br>
+                <label for="service">Service:<span class="asterisk">*</span> <br>
                     <select name="service" id="service" required>
                         <option value="default" disabled="" selected="" hidden="">Please choose...</option>
                         <option value="development">Website Development</option>
@@ -157,7 +168,7 @@
                         <option value="combined">Combined services</option>
                     </select>
                 </label><br>
-                <label for="message">Message: <br>
+                <label for="message">Message:<span class="asterisk">*</span> <br>
                     <textarea name="message" id="message" placeholder="Message"></textarea>
                 </label><br>
                 <input type="submit" value="Send">
@@ -166,7 +177,7 @@
         <!--ToDo: Review section-->
         <section>
             <h2 class="section-title">Payment methods</h2>
-            <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="section-description">We support a huge variety of payment solutions, but for now, we are only able to process crypto payments for our development and maintenance services.</p>
             <div class="card-container">
                 
                 <div class="wrap-card">
